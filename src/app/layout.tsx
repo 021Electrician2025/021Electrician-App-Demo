@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   description: "Comprehensive hotel facilities management system for maintenance, work orders, and asset tracking.",
   keywords: ["Hotel", "Facilities", "Management", "Maintenance", "Work Orders", "Assets"],
   authors: [{ name: "Hotel Facilities Management Team" }],
+  icons: {
+    icon: "/Logo.jpeg",
+    shortcut: "/Logo.jpeg",
+    apple: "/Logo.jpeg",
+  },
   openGraph: {
     title: "021 Electrician Application",
     description: "Comprehensive electrician application system",
@@ -39,6 +44,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/Logo.jpeg" type="image/jpeg" />
+        <link rel="shortcut icon" href="/Logo.jpeg" type="image/jpeg" />
+        <link rel="apple-touch-icon" href="/Logo.jpeg" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >

@@ -36,9 +36,10 @@ export function SplashScreen() {
         className="text-center"
       >
         <motion.div
-           
+          initial={{ rotate: 0 }}
+          animate={{ rotate: 360 }}
           transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-          className="w-32 h-32 mx-auto mb-6"
+          className="w-48 h-48 mx-auto mb-8"
         >
           <img
             src="/Logo.jpeg"
