@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { UserRole } from "@prisma/client"
+import { UserRole } from "@/lib/mock-data"
 
 interface User {
   id: string

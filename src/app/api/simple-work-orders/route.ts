@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { z } from "zod"
-import { Priority, WorkOrderStatus } from "@prisma/client"
+import { Priority, WorkOrderStatus } from "@/lib/mock-data"
 
 const createWorkOrderSchema = z.object({
   title: z.string().min(1),

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
 import { z } from "zod"
-import { UserRole } from "@prisma/client"
+import { UserRole } from "@/lib/mock-data"
 import { db } from "@/lib/db"
 
 const registerSchema = z.object({
