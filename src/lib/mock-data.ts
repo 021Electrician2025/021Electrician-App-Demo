@@ -9,6 +9,13 @@ export type PPMStatus = 'SCHEDULED' | 'COMPLETED' | 'OVERDUE' | 'CANCELLED'
 export type AssetStatus = 'OPERATIONAL' | 'NEEDS_MAINTENANCE' | 'UNDER_REPAIR' | 'RETIRED'
 
 // Enum objects for Zod compatibility
+export const UserRole = {
+  STAFF: 'STAFF',
+  TECHNICIAN: 'TECHNICIAN',
+  MANAGER: 'MANAGER',
+  ADMIN: 'ADMIN'
+} as const
+
 export const Priority = {
   LOW: 'LOW',
   MEDIUM: 'MEDIUM',
