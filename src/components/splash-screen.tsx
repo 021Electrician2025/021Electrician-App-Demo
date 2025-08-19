@@ -36,9 +36,9 @@ export function SplashScreen() {
         className="text-center"
       >
         <motion.div
-          initial={{ rotate: 0 }}
-          animate={{ rotate: 360 }}
-          transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
           className="w-48 h-48 mx-auto mb-8"
         >
           <img
